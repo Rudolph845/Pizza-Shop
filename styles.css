@@ -55,7 +55,8 @@ body {
 }
 
 .nav-bar-list li:hover {
-  background-color: #555;
+  background-color: white;
+  border-radius: 15px;
 }
 
 /*  Hamburger Icon (for mobile) */
@@ -91,11 +92,6 @@ body {
   .nav-bar-list {
       display: none;
       width: 100%;
-  }
-
-  .nav-bar-list ul {
-      width: 100%;
-      flex-direction: column;
   }
 
   .nav-bar-list ul li {
@@ -246,10 +242,8 @@ body {
 }
 
 .card {
-  border: black;
-  border-radius: 20px;
-  border-style: solid;
-  height: 400px;
+
+  height: 300px;
   margin: 10px;
 }
 
