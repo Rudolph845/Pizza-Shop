@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Pizza</title>
     <title>Pizza Shop</title>
 </head>
 <body>
@@ -19,17 +18,18 @@
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
-            <span class="bar"></span>
             </a>
             <div class="nav-bar-list">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         <div class="nav-bar-phone">+1-845-439-0844</div>
-        <div class="nav-bar-cart-total">Cart Total</div>
+        <div class="nav-bar-cart-total">
+            <div class="cart-total">Cart Total</div>
+            <div class="checkout"> <a href="cart.html">Check Out</a></div>
+        </div>
     </div>
     <!-- This is the first section -->
     <div class="first-container">
@@ -65,8 +65,9 @@
                 </div>
                 <div class="card-body">
                 <div class="card-text">
-                    <h5 id="store-item-name">Extra Cheese</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">$1</strong></h5>
+                    <div id="store-item-name">Extra Cheese</div>
+                    <div class="store-item-value" id="store-item-price">$12</div>
+                    <button class="btn btn-add-to-cart" type="button" onclick="addToCart()">ADD TO CART</button>
                 </div>
                 </div>
             </div>
@@ -83,7 +84,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Extra Greens</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">2</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$10</h5>                
                 </div>
                 </div>
             </div>
@@ -100,7 +101,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Calzone</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">3</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$11</h5>
                 </div>
                 </div>
             </div>
@@ -117,7 +118,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Deep Dish</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">4</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$22</h5>
                 </div>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Pepper</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$15</h5>
                 </div>
                 </div>
             </div>
@@ -151,7 +152,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Only Cheese</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">6</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$18</h5>
                 </div>
                 </div>
             </div>
@@ -168,7 +169,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Wood Fire Oven</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">7</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$15</h5>
                 </div>
                 </div>
             </div>
@@ -185,7 +186,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Pepperoni</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">8</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$7</h5>
                 </div>
                 </div>
             </div>
@@ -202,7 +203,7 @@
                 <div class="card-body">
                 <div class="card-text">
                     <h5 id="store-item-name">Single Slice</h5>
-                    <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">9</strong></h5>
+                    <h5 class="store-item-value" id="store-item-price">$5</h5>
                 </div>
                 </div>
             </div>

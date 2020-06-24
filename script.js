@@ -1,8 +1,13 @@
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('nav-bar-list')[0]
+/// Hamburger Icon Display
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+const navBarList = document.getElementsByClassName("nav-bar-list")[0]
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+  navBarList.classList.toggle('active')
 })
+
+
+
+/// Shopping Cart 
 
