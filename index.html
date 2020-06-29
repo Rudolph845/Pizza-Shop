@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" async></script>
     <title>Pizza Shop</title>
 </head>
 <body>
@@ -18,11 +19,13 @@
         <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
+            <span class="bar"></span>
             </a>
             <div class="nav-bar-list">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-container">About</a></li>
+                    <li><a href="#store-container">Store</a></li>
                 </ul>
             </div>
         <div class="nav-bar-phone">+1-845-439-0844</div>
@@ -39,7 +42,7 @@
         </div>
     </div>
        <!-- This is the second section, about -->
-    <div class="about-container">
+    <div class="about-container" id="about-container">
         <div class="about-wrapper"> About Us
             <div class="about-title">Welcome the world's greatest pizza! ... well in our minds</div>
             <div class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -49,7 +52,7 @@
         <div class="about-picture"></div>
     </div>
   <!-- This is the third section, store -->
-    <div class="store-container">
+    <div class="store-container" id="store-container">
         <div class="store-nav">
         <div class="store-title">Our Delicious Pizzas</div>
         <div class="store-filter">Maybe a filter here</div>
@@ -57,156 +60,128 @@
         <div class="store-items">
         <!-- Pizza 1 Start-->
             <div class="item-1">
-            <div class="card">
-                <div class="img-pizza-1 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+                <div class="card">
+                    <img class="img-border img-pizza-1" src="images/pizza-extra-cheese.jpg">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Extra Cheese</div>
+                            <div class="store-item-value food-price" id="store-item-price">$12</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <div id="store-item-name">Extra Cheese</div>
-                    <div class="store-item-value" id="store-item-price">$12</div>
-                    <button class="btn btn-add-to-cart" type="button" onclick="addToCart()">ADD TO CART</button>
-                </div>
-                </div>
-            </div>
             </div>
         <!-- Pizza 1 End-->
         <!-- Pizza 2 Start-->
-        <div class="item-2">
-            <div class="card">
-                <div class="img-pizza-2 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-2">
+                <div class="card">
+                    <img class="img-pizza-2 img-border" src="images/pizza-extra-greens.jpg">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Extra Greens</div>
+                            <div class="store-item-value food-price" id="store-item-price">$10</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>               
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Extra Greens</h5>
-                    <h5 class="store-item-value" id="store-item-price">$10</h5>                
-                </div>
-                </div>
-            </div>
             </div>
         <!-- Pizza 2 End-->
         <!-- Pizza 3 Start-->
-        <div class="item-3">
-            <div class="card">
-                <div class="img-pizza-3 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-3">
+                <div class="card">
+                    <div class="img-pizza-3 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Calzone</div>
+                            <div class="store-item-value food-price" id="store-item-price">$11</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Calzone</h5>
-                    <h5 class="store-item-value" id="store-item-price">$11</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!-- Pizza 3 End-->
         <!-- Pizza 4 Start-->
-        <div class="item-4">
-            <div class="card">
-                <div class="img-pizza-4 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-4">
+                <div class="card">
+                    <div class="img-pizza-4 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Deep Dish</div>
+                            <div class="store-item-value food-price" id="store-item-price">$22</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Deep Dish</h5>
-                    <h5 class="store-item-value" id="store-item-price">$22</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!-- Pizza 4 End-->
         <!-- Pizza 5 Start-->
-        <div class="item-5">
-            <div class="card">
-                <div class="img-pizza-5 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-5">
+                <div class="card">
+                    <div class="img-pizza-5 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Pepper</div>
+                            <div class="store-item-value food-price" id="store-item-price">$15</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Pepper</h5>
-                    <h5 class="store-item-value" id="store-item-price">$15</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!--  Pizza 5 End-->
         <!-- Pizza 6 Start-->
-        <div class="item-6">
-            <div class="card">
-                <div class="img-pizza-6 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-6">
+                <div class="card">
+                    <div class="img-pizza-6 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Only Cheese</div>
+                            <div class="store-item-value food-price" id="store-item-price">$18</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Only Cheese</h5>
-                    <h5 class="store-item-value" id="store-item-price">$18</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!--  Pizza 6 End-->
         <!-- Pizza 7 Start-->
-        <div class="item-7">
-            <div class="card">
-                <div class="img-pizza-7 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-7">
+                <div class="card">
+                    <div class="img-pizza-7 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Wood Fire</div>
+                            <div class="store-item-value food-price" id="store-item-price">$15</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Wood Fire Oven</h5>
-                    <h5 class="store-item-value" id="store-item-price">$15</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!--  Pizza 7 End-->
         <!--  Pizza 8 Start-->
-        <div class="item-8">
-            <div class="card">
-                <div class="img-pizza-8 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-8">
+                <div class="card">
+                    <div class="img-pizza-8 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Pepperoni</div>
+                            <div class="store-item-value food-price" id="store-item-price">$15</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Pepperoni</h5>
-                    <h5 class="store-item-value" id="store-item-price">$7</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!--  Pizza 8 End-->
         <!--  Pizza 9 Start-->
-        <div class="item-9">
-            <div class="card">
-                <div class="img-pizza-9 img-border">
-                <span class="store-item-icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </span>
+            <div class="item-9">
+                <div class="card">
+                    <div class="img-pizza-9 img-border"></div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <div class="store-item-name">Single Slice</div>
+                            <div class="store-item-value food-price" id="store-item-price">$5</div>
+                            <button class="btn btn-add-to-cart" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card-body">
-                <div class="card-text">
-                    <h5 id="store-item-name">Single Slice</h5>
-                    <h5 class="store-item-value" id="store-item-price">$5</h5>
-                </div>
-                </div>
-            </div>
             </div>
         <!--  Pizza 9 End-->
 
@@ -215,6 +190,5 @@
     </div>
 </body>
 
-    <script src="script.js"></script>
 
 </html>

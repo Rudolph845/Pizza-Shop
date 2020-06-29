@@ -59,6 +59,13 @@ body {
   border-radius: 15px;
 }
 
+#about-container, #store-container {
+  padding-top: 75px;
+  margin-top: -50px;
+}
+
+
+
 /*  Hamburger Icon (for mobile) */
 
 .toggle-button {
@@ -242,7 +249,6 @@ body {
 }
 
 .card {
-
   height: 300px;
   margin: 10px;
 }
@@ -258,6 +264,7 @@ body {
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 40px black;
 }
+
 
 .img-pizza-1 {
 background-image: url("images/pizza-extra-cheese.jpg");
@@ -329,7 +336,7 @@ border-radius: 15px;
   display: flex;
   background-position: center;
   background-size: auto;
-  height: 700px;
+  height: 1000px;
 }
 
 .cart-card {
@@ -349,5 +356,70 @@ border-radius: 15px;
     #ccfffc,
     #ffcccf);
   padding: 25px;
+  margin-top: 100px;
+  width: 80%;
+  max-width: 600px;
 }
 
+.info {
+margin: 5px;
+}
+
+.food {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.food-pic {
+  width: 70%;
+  max-height: 100px;
+  background-size: cover;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.food-info {
+  display: inline-block;
+  align-items: center;
+}
+
+ .checkout-total {
+   float: right;
+   margin-left: 30px;
+ }
+
+.pizza-cart-1 {
+  background-image: url("images/pizza-extra-cheese.jpg");
+}
+
+.pizza-cart-2 {
+  background-image: url("images/pizza-extra-greens.jpg");
+}
+  
+.pizza-cart-3 {
+  background-image: url("images/calzone.jpg");
+}
+  
+.pizza-cart-4 {
+  background-image: url("images/deep-dish.jpg");
+}
+  
+.pizza-cart-5 {
+  background-image: url("images/pepper.jpg");
+}
+  
+.pizza-cart-6 {
+  background-image: url("images/pizza-only-cheese.jpg");
+}
+  
+.pizza-cart-7 {
+  background-image: url("images/wood-fire-oven.jpg");
+}
+  
+.pizza-cart-8 {
+  background-image: url("images/pizza-pepperoni.jpg");
+}
+  
+.pizza-cart-9 {
+  background-image: url("images/single-slice.jpg");
+}
